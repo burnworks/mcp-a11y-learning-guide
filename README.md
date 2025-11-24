@@ -153,10 +153,12 @@ MCP サーバを設定していても、いきなり質問をすると、多く�
 - https://www.w3.org/WAI/WCAG22/Techniques/
 - https://waic.jp/translations/
 
-## マッピングファイルの追加
+## 開発者向け
+
+### マッピングファイルの追加
 `mappings/` にYAMLでトピックマッピングを追加します。例として `mappings/links.yaml` を参照してください。
 
-## 開発
+### 開発
 ```bash
 # 開発モード
 npm run dev
