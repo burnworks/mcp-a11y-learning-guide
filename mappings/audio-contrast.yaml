@@ -1,0 +1,65 @@
+topic: "音声と背景音のコントラスト"
+
+keywords:
+  - "音声"
+  - "audio"
+  - "背景音"
+  - "バックグラウンド"
+  - "聞き取り"
+  - "音質"
+
+references:
+  criteria:
+    - id: "1.4.2"
+      level: "A"
+      title: "音声の制御"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#audio-control"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/audio-control"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#audio-control"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/audio-control"
+      priority: "must-read"
+      description: "自動再生音を停止・音量調整できる"
+    - id: "1.4.7"
+      level: "AAA"
+      title: "ローバックグラウンドオーディオ"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#low-or-no-background-audio"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/low-or-no-background-audio"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#low-or-no-background-audio"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/low-or-no-background-audio"
+      priority: "recommended"
+      description: "背景音を抑え音声を明瞭に"
+
+  techniques:
+    - id: "G60"
+      title: "バックグラウンド音声を停止・音量調整するコントロールを提供する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G60"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G60"
+      type: "general"
+      priority: "high"
+    - id: "G56"
+      title: "音声コンテンツで背景音を用いない"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G56"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G56"
+      type: "general"
+      priority: "high"
+    - id: "G166"
+      title: "背景音を20dB低く設定する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G166"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G166"
+      type: "general"
+      priority: "medium"
+
+  failures:
+    - id: "F23"
+      title: "背景音が主音声の理解を妨げる"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F23"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F23"
+      priority: "high"
+
+learning_path: |
+  1. 1.4.7 で背景音に関する要件を理解する
+  2. G56/G166 で背景音を抑える実装を確認する
+  3. F23 で音声理解を妨げる失敗例を確認する
+
+related_topics:
+  - "multimedia"

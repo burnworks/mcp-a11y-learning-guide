@@ -1,0 +1,85 @@
+topic: "マルチステップフォーム"
+
+keywords:
+  - "マルチステップ"
+  - "multi-step"
+  - "wizard"
+  - "ステップ"
+  - "確認画面"
+  - "途中保存"
+  - "ステップインジケータ"
+  - "進捗"
+  - "戻るボタン"
+
+references:
+  criteria:
+    - id: "3.2.2"
+      level: "A"
+      title: "入力時"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#on-input"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/on-input"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#on-input"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/on-input"
+      priority: "must-read"
+      description: "入力で予期せぬ変化を起こさない"
+    - id: "3.3.4"
+      level: "AA"
+      title: "エラー防止（法的、金融、データ）"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#error-prevention-legal-financial-data"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-legal-financial-data"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#error-prevention-legal-financial-data"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/error-prevention-legal-financial-data"
+      priority: "recommended"
+      description: "確認・取消・再入力を提供する"
+    - id: "3.3.6"
+      level: "AAA"
+      title: "エラー防止（すべて）"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#error-prevention-all"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-all"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#error-prevention-all"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/error-prevention-all"
+      priority: "optional"
+      description: "重要データで確認・取消を徹底"
+
+  techniques:
+    - id: "G199"
+      title: "送信前に確認画面を提供する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G199"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G199"
+      type: "general"
+      priority: "high"
+    - id: "G98"
+      title: "入力の誤りを減らすため事前に十分な説明を提供する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G98"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G98"
+      type: "general"
+      priority: "medium"
+    - id: "G191"
+      title: "送信を取り消すメカニズムを提供する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G191"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G191"
+      type: "general"
+      priority: "medium"
+
+  failures:
+    - id: "F82"
+      title: "label 要素を用いずにテキストフィールドを特定している"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F82"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F82"
+      priority: "medium"
+    - id: "F77"
+      title: "確認や取り消しなく重要なデータを送信している"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F77"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F77"
+      priority: "high"
+
+learning_path: |
+  1. 達成基準 3.2.2 で予期しない画面遷移を防ぐ要件を確認する
+  2. 3.3.4 / 3.3.6 で重要データの確認・取消・再入力を理解する
+  3. G199/G191 で確認画面や取消手段の実装を学ぶ
+  4. G98 で事前説明による入力ミス低減を確認する
+  5. F77 など失敗例を見て回避策を把握する
+
+related_topics:
+  - "forms"
+  - "status-messages"

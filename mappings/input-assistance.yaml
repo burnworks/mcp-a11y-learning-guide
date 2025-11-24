@@ -1,0 +1,103 @@
+topic: "入力支援とヘルプ"
+
+keywords:
+  - "入力支援"
+  - "ヘルプ"
+  - "help"
+  - "支援"
+  - "instruction"
+  - "説明"
+  - "ガイダンス"
+  - "placeholder"
+  - "ヒント"
+  - "ガイドテキスト"
+  - "autocomplete"
+
+references:
+  criteria:
+    - id: "3.3.2"
+      level: "A"
+      title: "ラベル又は説明"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#labels-or-instructions"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#labels-or-instructions"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/labels-or-instructions"
+      priority: "must-read"
+      description: "入力前に必要情報を提示"
+    - id: "3.3.5"
+      level: "AAA"
+      title: "ヘルプ"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#help"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/help"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#help"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/help"
+      priority: "recommended"
+      description: "必要なときにヘルプを提供"
+    - id: "3.3.7"
+      level: "A"
+      title: "冗長な入力"
+      wcag_url: "https://www.w3.org/TR/WCAG22/#redundant-entry"
+      understanding_url: "https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry"
+      wcag_url_ja: "https://waic.jp/translations/WCAG22/#redundant-entry"
+      understanding_url_ja: "https://waic.jp/translations/WCAG22/Understanding/redundant-entry"
+      priority: "recommended"
+      description: "再入力を避ける"
+    - id: "3.3.8"
+      level: "AA"
+      title: "アクセシブルな認証（最低限）"
+      wcag_url: "https://www.w3.org/TR/WCAG22/#accessible-authentication-minimum"
+      understanding_url: "https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum"
+      wcag_url_ja: "https://waic.jp/translations/WCAG22/#accessible-authentication-minimum"
+      understanding_url_ja: "https://waic.jp/translations/WCAG22/Understanding/accessible-authentication-minimum"
+      priority: "optional"
+      description: "認証で認知負荷を減らす"
+
+  techniques:
+    - id: "G83"
+      title: "未入力の必須項目を特定する説明を提供する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G83"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G83"
+      type: "general"
+      priority: "high"
+    - id: "G85"
+      title: "形式や範囲外入力にテキスト説明を提供する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G85"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G85"
+      type: "general"
+      priority: "high"
+    - id: "G131"
+      title: "必須項目を明確にする"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G131"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G131"
+      type: "general"
+      priority: "medium"
+    - id: "H44"
+      title: "label 要素を使用する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/html/H44"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/html/H44"
+      type: "html"
+      priority: "high"
+
+  failures:
+    - id: "F82"
+      title: "label 要素を用いずにテキストフィールドを特定している"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F82"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F82"
+      priority: "high"
+    - id: "F68"
+      title: "視覚的にしか識別できないラベルや説明を用いている"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F68"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F68"
+      priority: "high"
+
+learning_path: |
+  1. 達成基準 3.3.2 でラベル・説明の基本を確認する
+  2. 3.3.5 でヘルプ提供の要件を把握する
+  3. 3.3.7 で再入力を避ける要件を確認する（WCAG 2.2）
+  4. 3.3.8 で認証時の負荷軽減を検討する
+  5. G83/G85/G131/H44 で具体的な入力支援策を学ぶ
+  6. F82/F68 で避けるべき失敗例を確認する
+
+related_topics:
+  - "forms"
+  - "multi-step-forms"

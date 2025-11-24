@@ -1,0 +1,76 @@
+topic: "データテーブル"
+
+keywords:
+  - "テーブル"
+  - "table"
+  - "データテーブル"
+  - "表組み"
+  - "ヘッダーセル"
+  - "scope"
+  - "headers"
+  - "行ヘッダー"
+  - "列ヘッダー"
+  - "複雑テーブル"
+
+references:
+  criteria:
+    - id: "1.3.1"
+      level: "A"
+      title: "情報及び関係性"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#info-and-relationships"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#info-and-relationships"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/info-and-relationships"
+      priority: "must-read"
+      description: "テーブル構造をマークアップで示す"
+    - id: "1.3.2"
+      level: "A"
+      title: "意味のある順序"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#meaningful-sequence"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#meaningful-sequence"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/meaningful-sequence"
+      priority: "recommended"
+      description: "読み上げ順序が意味を保つ"
+
+  techniques:
+    - id: "H51"
+      title: "データテーブルに thead, tbody, th を用いる"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/html/H51"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/html/H51"
+      type: "html"
+      priority: "high"
+    - id: "H43"
+      title: "th と headers 属性でセルの関連を示す"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/html/H43"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/html/H43"
+      type: "html"
+      priority: "high"
+    - id: "H63"
+      title: "scope 属性で見出しセルの範囲を示す"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/html/H63"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/html/H63"
+      type: "html"
+      priority: "medium"
+
+  failures:
+    - id: "F46"
+      title: "データテーブルを正しくマークアップしていない"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F46"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F46"
+      priority: "high"
+    - id: "F90"
+      title: "見出しセルやデータセルの関連付けが不足している"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F90"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F90"
+      priority: "medium"
+
+learning_path: |
+  1. 達成基準 1.3.1 でテーブル構造をマークアップする必要性を理解する
+  2. 達成基準 1.3.2 で読み上げ順序を保持する重要性を確認する
+  3. H51/H43/H63 でデータテーブルの正しいマークアップを学ぶ
+  4. F46/F90 でヘッダー関連付け不足などの失敗例を把握する
+
+related_topics:
+  - "headings"
+  - "navigation"

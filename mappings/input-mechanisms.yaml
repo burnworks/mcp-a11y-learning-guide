@@ -1,0 +1,55 @@
+topic: "ターゲットサイズ"
+
+keywords:
+  - "ターゲットサイズ"
+  - "target size"
+  - "44px"
+  - "44"
+  - "ボタン"
+  - "大きさ"
+
+references:
+  criteria:
+    - id: "2.5.5"
+      level: "AA"
+      title: "ターゲットの大きさ"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#target-size"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/target-size"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#target-size"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/target-size"
+      priority: "recommended"
+      description: "2.1 の旧AA要件（2.2 では 2.5.8 に置き換え）。タップターゲットが十分な大きさであること。"
+
+  techniques:
+    - id: "C42"
+      title: "min-height 及び min-width を用いてターゲットの間隔を確保する"
+      url: "https://www.w3.org/WAI/WCAG22/Techniques/css/C42"
+      url_ja: "https://waic.jp/translations/WCAG22/Techniques/css/C42"
+      type: "css"
+      priority: "medium"
+
+  failures:
+    - id: "Understanding-2.5.5-1"
+      title: "2.5.5 の失敗例: ターゲットのサイズが 44×44 CSS ピクセル未満"
+      url: "https://www.w3.org/WAI/WCAG21/Understanding/target-size#failures"
+      url_ja: "https://waic.jp/translations/WCAG21/Understanding/target-size#failures"
+      priority: "high"
+      applies_to:
+        - "2.5.5"
+    - id: "Understanding-2.5.5-2"
+      title: "2.5.5 の失敗例: 段落リンクのターゲットサイズが 44×44 未満"
+      url: "https://www.w3.org/WAI/WCAG21/Understanding/target-size#failures"
+      url_ja: "https://waic.jp/translations/WCAG21/Understanding/target-size#failures"
+      priority: "medium"
+      applies_to:
+        - "2.5.5"
+
+learning_path: |
+  1. 2.5.5 でターゲットサイズの旧AA要件を確認する（2.2 では 2.5.8 に更新されている点も把握）
+  3. C42 で十分なテクニックを確認する
+  4. Understanding 2.5.5 の失敗例（44×44 未満など）で避けるべきパターンを押さえる
+
+related_topics:
+  - "interactive-components"
+  - "keyboard"
+  - "navigation"

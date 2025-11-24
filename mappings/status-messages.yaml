@@ -1,0 +1,61 @@
+topic: "ステータスメッセージ"
+
+keywords:
+  - "ステータス"
+  - "status"
+  - "ライブリージョン"
+  - "aria-live"
+  - "通知"
+  - "アラート"
+  - "成功メッセージ"
+  - "エラーバナー"
+  - "通知領域"
+
+references:
+  criteria:
+    - id: "4.1.3"
+      level: "A"
+      title: "ステータスメッセージ"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#status-messages"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/status-messages"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#status-messages"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/status-messages"
+      priority: "must-read"
+      description: "動的な状態通知を支援技術に伝える"
+
+  techniques:
+    - id: "ARIA19"
+      title: "aria-live で動的な変更を通知する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA19"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/aria/ARIA19"
+      type: "aria"
+      priority: "high"
+    - id: "ARIA22"
+      title: "role=status/progressbar など適切な役割で通知する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA22"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/aria/ARIA22"
+      type: "aria"
+      priority: "medium"
+    - id: "G83"
+      title: "入力不備をテキストで通知する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G83"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G83"
+      type: "general"
+      priority: "medium"
+
+  failures:
+    - id: "F15"
+      title: "重要な変更を利用者に通知していない"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F15"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F15"
+      priority: "medium"
+
+learning_path: |
+  1. 達成基準 4.1.3 を読み、ステータスメッセージの要件を把握する
+  2. ARIA19/ARIA22 で aria-live や適切なロールの使い方を確認する
+  3. G83 で入力エラー通知の具体例を学ぶ
+  4. F15 で通知不足による失敗例を確認する
+
+related_topics:
+  - "forms"
+  - "keyboard"

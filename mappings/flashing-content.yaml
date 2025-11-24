@@ -1,0 +1,56 @@
+topic: "閃光と発作の回避"
+
+keywords:
+  - "閃光"
+  - "フラッシュ"
+  - "flash"
+  - "点滅"
+  - "光刺激"
+  - "発作"
+
+references:
+  criteria:
+    - id: "2.3.1"
+      level: "A"
+      title: "3回の閃光又は光度による閃光のしきい値以下"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#three-flashes-or-below-threshold"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#three-flashes-or-below-threshold"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/three-flashes-or-below-threshold"
+      priority: "must-read"
+      description: "1秒間に3回を超える閃光を避ける"
+
+  techniques:
+    - id: "G19"
+      title: "1秒間に3回を超える閃光を含めない"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G19"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G19"
+      type: "general"
+      priority: "high"
+    - id: "G176"
+      title: "ビデオの光刺激を処理して閃光を減らす"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G176"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G176"
+      type: "general"
+      priority: "medium"
+
+  failures:
+    - id: "F7"
+      title: "1秒間に3回を超える閃光を含むコンテンツ"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F7"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F7"
+      priority: "high"
+    - id: "F16"
+      title: "動いているコンテンツを止めるメカニズムがない"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F16"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F16"
+      priority: "medium"
+
+learning_path: |
+  1. 達成基準 2.3.1 で閃光に関するしきい値を理解する
+  2. G19 で閃光を避ける実装方法を確認する
+  3. F7 の失敗例を確認し、発作を誘発しないようにする
+
+related_topics:
+  - "multimedia"
+  - "timing-and-motion"

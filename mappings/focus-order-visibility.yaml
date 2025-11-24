@@ -1,0 +1,54 @@
+topic: "フォーカス順と可視性"
+
+keywords:
+  - "フォーカス順"
+  - "focus order"
+  - "tab順"
+  - "フォーカスが隠れる"
+  - "focus not obscured"
+  - "フォーカス見失い"
+
+references:
+  criteria:
+    - id: "2.4.3"
+      level: "A"
+      title: "フォーカス順序"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#focus-order"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/focus-order"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#focus-order"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/focus-order"
+      priority: "must-read"
+      description: "意味を保つフォーカス移動順序"
+    - id: "2.4.12"
+      level: "AA"
+      title: "フォーカスの非被覆（最小）"
+      wcag_url: "https://www.w3.org/TR/WCAG22/#focus-not-obscured-minimum"
+      understanding_url: "https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum"
+      priority: "recommended"
+      description: "フォーカスが隠れないようにする"
+
+  techniques:
+    - id: "G59"
+      title: "フォーカス順序が意味と操作性を保つ配置にする"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G59"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G59"
+      type: "general"
+      priority: "medium"
+
+  failures:
+    - id: "F87"
+      title: "フォーカス順序が意味や操作を妨げる"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F87"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F87"
+      priority: "high"
+
+learning_path: |
+  1. 2.4.3 で意味を保つフォーカス順序の要件を理解する
+  2. 2.4.12（WCAG 2.2）でフォーカスが隠れないようにする要件を確認する
+  3. G59 で適切なフォーカス順序設計の指針を学ぶ
+  4. F87 で誤ったフォーカス順の失敗例を確認する
+
+related_topics:
+  - "keyboard"
+  - "interactive-components"
+  - "navigation"

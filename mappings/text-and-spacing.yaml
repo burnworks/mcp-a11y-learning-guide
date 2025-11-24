@@ -1,0 +1,94 @@
+topic: "テキストの拡大・リフロー・間隔"
+
+keywords:
+  - "テキスト拡大"
+  - "フォントサイズ"
+  - "reflow"
+  - "リフロー"
+  - "テキスト間隔"
+  - "line height"
+  - "行間"
+  - "letter spacing"
+  - "word spacing"
+
+references:
+  criteria:
+    - id: "1.4.4"
+      level: "AA"
+      title: "テキストのサイズ変更"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#resize-text"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/resize-text"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#resize-text"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/resize-text"
+      priority: "must-read"
+      description: "200%拡大でも内容が見える"
+    - id: "1.4.10"
+      level: "AA"
+      title: "リフロー"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#reflow"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/reflow"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#reflow"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/reflow"
+      priority: "must-read"
+      description: "横スクロールなしで再配置される"
+    - id: "1.4.12"
+      level: "AA"
+      title: "テキストの間隔"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#text-spacing"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/text-spacing"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#text-spacing"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/text-spacing"
+      priority: "recommended"
+      description: "行間・字間調整でも崩れない"
+    - id: "1.4.9"
+      level: "AAA"
+      title: "文字画像（例外なし）"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#images-of-text-no-exception"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/images-of-text-no-exception"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#images-of-text-no-exception"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/images-of-text-no-exception"
+      priority: "optional"
+      description: "文字画像を使わない（例外なし）"
+
+  techniques:
+    - id: "G142"
+      title: "テキストを画像でなくテキストとして提供する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G142"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G142"
+      type: "general"
+      priority: "high"
+    - id: "G146"
+      title: "テキストのサイズ変更をサポートする"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G146"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G146"
+      type: "general"
+      priority: "medium"
+    - id: "G204"
+      title: "テキストを再配置できるようにする"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G204"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G204"
+      type: "general"
+      priority: "medium"
+
+  failures:
+    - id: "F80"
+      title: "テキスト拡大でコンテンツが読めなくなる"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F80"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F80"
+      priority: "high"
+    - id: "F69"
+      title: "文字画像にテキスト代替を提供していない"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F69"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F69"
+      priority: "medium"
+
+learning_path: |
+  1. 1.4.4 でテキスト拡大の要件を理解する
+  2. 1.4.10 でリフロー要件を確認する
+  3. 1.4.12 で行間・字間調整に崩れない設計を学ぶ
+  4. G142/G146/G204 で実装方法を確認する
+  5. F80/F69 で拡大や文字画像に関する失敗例を把握する
+
+related_topics:
+  - "color-contrast"
+  - "images"

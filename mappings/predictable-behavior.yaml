@@ -1,0 +1,93 @@
+topic: "予測可能な挙動と一貫性"
+
+keywords:
+  - "予測可能"
+  - "予期せぬ動き"
+  - "オートリダイレクト"
+  - "自動遷移"
+  - "一貫性"
+  - "consistent navigation"
+  - "help"
+
+references:
+  criteria:
+    - id: "3.2.1"
+      level: "A"
+      title: "フォーカス時"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#on-focus"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/on-focus"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#on-focus"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/on-focus"
+      priority: "must-read"
+      description: "フォーカスで予期せぬ変化を起こさない"
+    - id: "3.2.3"
+      level: "AA"
+      title: "一貫したナビゲーション"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#consistent-navigation"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/consistent-navigation"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#consistent-navigation"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/consistent-navigation"
+      priority: "recommended"
+      description: "繰り返しナビゲーションの順序を統一"
+    - id: "3.2.4"
+      level: "AA"
+      title: "一貫した識別性"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#consistent-identification"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#consistent-identification"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/consistent-identification"
+      priority: "recommended"
+      description: "同一機能は統一したラベルで示す"
+    - id: "3.2.6"
+      level: "A"
+      title: "一貫したヘルプ"
+      wcag_url: "https://www.w3.org/TR/WCAG22/#consistent-help"
+      understanding_url: "https://www.w3.org/WAI/WCAG22/Understanding/consistent-help"
+      wcag_url_ja: "https://waic.jp/translations/WCAG22/#consistent-help"
+      understanding_url_ja: "https://waic.jp/translations/WCAG22/Understanding/consistent-help"
+      priority: "recommended"
+      description: "ヘルプの場所・提供方法を一貫"
+
+  techniques:
+    - id: "G107"
+      title: "フォーカスで予期せぬ動作を起こさない"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G107"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G107"
+      type: "general"
+      priority: "medium"
+    - id: "G61"
+      title: "繰り返しナビゲーションの順序を統一する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G61"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G61"
+      type: "general"
+      priority: "medium"
+    - id: "G197"
+      title: "コンテンツ更新やリダイレクトをユーザー制御にする"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G197"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G197"
+      type: "general"
+      priority: "medium"
+
+  failures:
+    - id: "F59"
+      title: "フォーカスでコンテンツが自動的に送信・更新される"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F59"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F59"
+      priority: "high"
+    - id: "F40"
+      title: "定期的に更新されるコンテンツを停止できない"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F40"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F40"
+      priority: "medium"
+
+learning_path: |
+  1. 3.2.1 でフォーカス時の予期せぬ変化を防ぐ
+  2. 3.2.3 / 3.2.4 でナビゲーションとラベルの一貫性を理解する
+  3. 3.2.6（WCAG 2.2）でヘルプ提供の一貫性を確認する
+  4. G107/G61/G197 で具体的な実装指針を学ぶ
+  5. F59/F40 で避けるべきパターンを把握する
+
+related_topics:
+  - "navigation"
+  - "multi-step-forms"
+  - "forms"

@@ -1,0 +1,91 @@
+topic: "時間制御と動きの制御"
+
+keywords:
+  - "タイムアウト"
+  - "時間制限"
+  - "pause"
+  - "停止"
+  - "隠す"
+  - "自動更新"
+  - "モーション"
+  - "motion"
+  - "デバイスの動き"
+
+references:
+  criteria:
+    - id: "2.2.1"
+      level: "A"
+      title: "タイミング可変"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#timing-adjustable"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#timing-adjustable"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/timing-adjustable"
+      priority: "must-read"
+      description: "制限時間を調整・延長できる"
+    - id: "2.2.2"
+      level: "A"
+      title: "一時停止、停止、非表示"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#pause-stop-hide"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#pause-stop-hide"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/pause-stop-hide"
+      priority: "must-read"
+      description: "動く・点滅・自動更新コンテンツを制御"
+    - id: "2.5.4"
+      level: "A"
+      title: "モーションアクチュエーション"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#motion-actuation"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#motion-actuation"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/motion-actuation"
+      priority: "recommended"
+      description: "動作操作に代替を提供"
+
+  techniques:
+    - id: "G4"
+      title: "制限時間を延長・調整する仕組みを提供する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G4"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G4"
+      type: "general"
+      priority: "high"
+    - id: "G186"
+      title: "動くコンテンツを一時停止・停止・非表示にする"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G186"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G186"
+      type: "general"
+      priority: "high"
+    - id: "G218"
+      title: "端末の動きを使わず代替操作を提供する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G218"
+      type: "general"
+      priority: "medium"
+    - id: "G152"
+      title: "自動更新をオフにする手段を提供する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G152"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G152"
+      type: "general"
+      priority: "medium"
+
+  failures:
+    - id: "F16"
+      title: "動いているコンテンツを止めるメカニズムがない"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F16"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F16"
+      priority: "high"
+    - id: "F40"
+      title: "自動更新コンテンツを停止・調整できない"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F40"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F40"
+      priority: "medium"
+
+learning_path: |
+  1. 2.2.1 で制限時間の調整・延長の要件を確認する
+  2. 2.2.2 で動く/点滅/自動更新コンテンツの制御要件を確認する
+  3. 2.5.4 でモーション操作の代替を検討する
+  4. G4/G186/G218/G152 で実装方法を学ぶ
+  5. F16/F40 で避けるべき失敗例を把握する
+
+related_topics:
+  - "predictable-behavior"
+  - "keyboard"
+  - "multimedia"

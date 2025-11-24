@@ -1,0 +1,85 @@
+topic: "キーボード操作"
+
+keywords:
+  - "キーボード"
+  - "keyboard"
+  - "tab"
+  - "タブ移動"
+  - "ショートカット"
+  - "フォーカス"
+  - "ショートカットキー"
+  - "キーボードトラップ"
+  - "矢印キー"
+
+references:
+  criteria:
+    - id: "2.1.1"
+      level: "A"
+      title: "キーボード"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#keyboard"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/keyboard"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#keyboard"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/keyboard"
+      priority: "must-read"
+      description: "すべての機能をキーボードで利用可能に"
+    - id: "2.1.2"
+      level: "A"
+      title: "キーボードトラップなし"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#no-keyboard-trap"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#no-keyboard-trap"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/no-keyboard-trap"
+      priority: "must-read"
+      description: "フォーカスを閉じ込めない"
+    - id: "2.1.4"
+      level: "A"
+      title: "文字キーショートカット"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#character-key-shortcuts"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/character-key-shortcuts"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#character-key-shortcuts"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/character-key-shortcuts"
+      priority: "recommended"
+      description: "単一キー操作の無効化や代替を提供"
+
+  techniques:
+    - id: "G202"
+      title: "キーボードで全機能を操作できるようにする"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G202"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G202"
+      type: "general"
+      priority: "high"
+    - id: "G21"
+      title: "キーボードトラップを避ける"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G21"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G21"
+      type: "general"
+      priority: "high"
+    - id: "G217"
+      title: "単一キーショートカットを無効化・再マップする"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G217"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G217"
+      type: "general"
+      priority: "medium"
+
+  failures:
+    - id: "F10"
+      title: "キーボードで操作できない機能がある"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F10"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F10"
+      priority: "high"
+    - id: "F60"
+      title: "フォーカスを移動できないキーボードトラップがある"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F60"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F60"
+      priority: "high"
+
+learning_path: |
+  1. 達成基準 2.1.1 でキーボード対応の基本を確認する
+  2. 達成基準 2.1.2 でトラップ禁止を理解する
+  3. 達成基準 2.1.4 で単一キーショートカットの制御を確認する
+  4. G202/G21 でキーボード対応の実装を学ぶ
+  5. F10/F60 で避けるべき失敗例を確認する
+
+related_topics:
+  - "navigation"
+  - "color-contrast"

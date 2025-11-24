@@ -1,0 +1,83 @@
+topic: "画像の代替テキスト"
+
+keywords:
+  - "画像"
+  - "image"
+  - "代替テキスト"
+  - "alt"
+  - "alt属性"
+  - "オルト"
+  - "altテキスト"
+  - "代替え"
+  - "画像説明"
+  - "装飾画像"
+
+references:
+  criteria:
+    - id: "1.1.1"
+      level: "A"
+      title: "非テキストコンテンツ"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#non-text-content"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/non-text-content"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#non-text-content"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/non-text-content"
+      priority: "must-read"
+      description: "代替テキストの基本要件"
+    - id: "1.4.5"
+      level: "AA"
+      title: "文字画像"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#images-of-text"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/images-of-text"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#images-of-text"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/images-of-text"
+      priority: "recommended"
+      description: "文字画像の使用制限と例外"
+
+  techniques:
+    - id: "H37"
+      title: "img 要素の alt 属性を使用する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/html/H37"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/html/H37"
+      type: "html"
+      priority: "high"
+    - id: "H2"
+      title: "画像とテキストリンクを同じリンクに含める"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/html/H2"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/html/H2"
+      type: "html"
+      priority: "medium"
+    - id: "ARIA6"
+      title: "aria-label でオブジェクトのラベルを提供する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA6"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/aria/ARIA6"
+      type: "aria"
+      priority: "medium"
+    - id: "G94"
+      title: "短い説明を提供する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G94"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G94"
+      type: "general"
+      priority: "medium"
+
+  failures:
+    - id: "F65"
+      title: "img 要素に alt 属性または title 属性を提供しない"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F65"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F65"
+      priority: "high"
+    - id: "F30"
+      title: "テキスト代替無しに画像のみで情報を提供している"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F30"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F30"
+      priority: "high"
+
+learning_path: |
+  1. まず達成基準 1.1.1 で代替テキストの基本要件を理解する
+  2. Understanding 1.1.1 で画像タイプ別の扱いを学ぶ
+  3. H37 で基本的な alt 実装方法を確認する
+  4. F65 で避けるべきパターンを把握する
+  5. 複雑な画像は追加説明の提供も検討する
+  6. WCAG 2.2 の更新点を定期的に確認する
+
+related_topics:
+  - "links"

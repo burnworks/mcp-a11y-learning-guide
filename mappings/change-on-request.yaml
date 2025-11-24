@@ -1,0 +1,52 @@
+topic: "要求による変更"
+
+keywords:
+  - "自動更新"
+  - "自動送信"
+  - "オートリダイレクト"
+  - "change on request"
+  - "手動実行"
+  - "submit"
+
+references:
+  criteria:
+    - id: "3.2.5"
+      level: "AA"
+      title: "要求による変更"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#change-on-request"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/change-on-request"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#change-on-request"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/change-on-request"
+      priority: "must-read"
+      description: "自動遷移ではなくユーザー操作で変更"
+
+  techniques:
+    - id: "G80"
+      title: "フォーム送信をユーザー操作で開始させる"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G80"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G80"
+      type: "general"
+      priority: "medium"
+    - id: "G201"
+      title: "自動更新をオフにする手段を提供する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G201"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G201"
+      type: "general"
+      priority: "medium"
+
+  failures:
+    - id: "F60"
+      title: "ユーザー操作なしにフォームが送信される"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F60"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F60"
+      priority: "high"
+
+learning_path: |
+  1. 3.2.5 で「変更は要求時のみ」という要件を理解する
+  2. G80/G201 で自動送信や自動更新を避ける実装を確認する
+  3. F60 で誤った自動送信の失敗例を把握する
+
+related_topics:
+  - "predictable-behavior"
+  - "forms"
+  - "timing-and-motion"

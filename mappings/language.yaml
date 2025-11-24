@@ -1,0 +1,61 @@
+topic: "ページと言語の指定"
+
+keywords:
+  - "lang"
+  - "language"
+  - "言語"
+  - "ページの言語"
+  - "部分の言語"
+  - "言語切替"
+
+references:
+  criteria:
+    - id: "3.1.1"
+      level: "A"
+      title: "ページの言語"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#language-of-page"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/language-of-page"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#language-of-page"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/language-of-page"
+      priority: "must-read"
+      description: "ページの主要言語を指定"
+    - id: "3.1.2"
+      level: "AA"
+      title: "部分の言語"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#language-of-parts"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#language-of-parts"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/language-of-parts"
+      priority: "recommended"
+      description: "一部の言語を正しく指定"
+
+  techniques:
+    - id: "H57"
+      title: "html 要素の lang 属性でページ言語を指定する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/html/H57"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/html/H57"
+      type: "html"
+      priority: "high"
+    - id: "H58"
+      title: "部分の言語変更をマークする"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/html/H58"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/html/H58"
+      type: "html"
+      priority: "high"
+
+  failures:
+    - id: "F72"
+      title: "言語変更をマークしていない"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F72"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F72"
+      priority: "high"
+
+learning_path: |
+  1. 3.1.1 でページの主言語指定を理解する
+  2. 3.1.2 で部分的な言語変更のマークアップを確認する
+  3. H57/H58 で lang 属性の具体例を学ぶ
+  4. F72 で言語指定漏れの失敗例を確認する
+
+related_topics:
+  - "forms"
+  - "input-assistance"

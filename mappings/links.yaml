@@ -1,0 +1,97 @@
+topic: "リンクテキスト"
+
+keywords:
+  - "リンク"
+  - "link"
+  - "アンカーテキスト"
+  - "anchor text"
+  - "リンク目的"
+  - "href"
+  - "リンクテキスト"
+  - "リンク名称"
+
+references:
+  criteria:
+    - id: "2.4.4"
+      level: "A"
+      title: "リンクの目的（コンテキスト内）"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#link-purpose-in-context"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#link-purpose-in-context"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/link-purpose-in-context"
+      priority: "must-read"
+      description: "リンクテキストの意味が文脈から判断できること"
+    - id: "2.4.9"
+      level: "AAA"
+      title: "リンクの目的（リンクのみ）"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#link-purpose-link-only"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-link-only"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#link-purpose-link-only"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/link-purpose-link-only"
+      priority: "recommended"
+      description: "リンクテキストだけで目的が判断できること（AAA）"
+
+  techniques:
+    - id: "H30"
+      title: "リンクの目的を示すリンクテキストを提供する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/html/H30"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/html/H30"
+      type: "html"
+      priority: "high"
+      applies_to:
+        - "2.4.4"
+    - id: "G91"
+      title: "リンクの目的を理解できるリンクテキストを提供する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G91"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G91"
+      type: "general"
+      priority: "medium"
+      applies_to:
+        - "2.4.4"
+    - id: "ARIA8"
+      title: "aria-labelを使用してリンクの目的を記述する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA8"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/aria/ARIA8"
+      type: "aria"
+      priority: "medium"
+      applies_to:
+        - "2.4.4"
+        - "2.4.9"
+
+  failures:
+    - id: "F63"
+      title: "達成基準 2.4.4/2.4.9 の失敗例 - 異なるリンク先に同一リンクテキストを使用"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/failures/F63"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F63"
+      priority: "high"
+      applies_to:
+        - "2.4.4"
+        - "2.4.9"
+    - id: "F84"
+      title: "達成基準 2.4.4/2.4.9 の失敗例 - リンクテキストがリンクの目的を説明していない"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F84"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F84"
+      priority: "medium"
+      applies_to:
+        - "2.4.4"
+        - "2.4.9"
+    - id: "F89"
+      title: "達成基準 2.4.4、2.4.9 や 4.1.2 の失敗例 - アクセシブルな名前がない"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F89"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F89"
+      priority: "medium"
+      applies_to:
+        - "2.4.4"
+        - "2.4.9"
+        - "4.1.2"
+
+learning_path: |
+  1. まず達成基準 2.4.4 の本文を読んで概要を把握する
+  2. Understanding 2.4.4 で事例と解釈を確認する
+  3. 達成方法 H30 / G91 で実装パターンを学ぶ（必要に応じて ARIA8 も確認）
+  4. 失敗例 F63 でリンクテキストの誤りを確認する
+  5. AAA の 2.4.9 を確認し、F84/F89 で追加の失敗パターンを把握する
+
+related_topics:
+  - "images"
+  - "buttons"

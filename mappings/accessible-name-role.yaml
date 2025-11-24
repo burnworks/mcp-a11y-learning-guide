@@ -1,0 +1,75 @@
+topic: "アクセシブルな名前とロール"
+
+keywords:
+  - "アクセシブルネーム"
+  - "accessible name"
+  - "ロール"
+  - "name role value"
+  - "aria-label"
+  - "aria-labelledby"
+  - "semantic"
+
+references:
+  criteria:
+    - id: "4.1.1"
+      level: "A"
+      title: "構文解析"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#parsing"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/parsing"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#parsing"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/parsing"
+      priority: "recommended"
+      description: "マークアップの文法エラーを避ける"
+    - id: "4.1.2"
+      level: "A"
+      title: "名前（name）、役割（role）、値（value）"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#name-role-value"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/name-role-value"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#name-role-value"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/name-role-value"
+      priority: "must-read"
+      description: "UI要素の名前・役割・値を提供"
+
+  techniques:
+    - id: "ARIA16"
+      title: "aria-labelledby を用いてラベルを提供する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA16"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/aria/ARIA16"
+      type: "aria"
+      priority: "high"
+    - id: "H91"
+      title: "フォームコントロールを適切にマークアップする"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/html/H91"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/html/H91"
+      type: "html"
+      priority: "high"
+    - id: "G136"
+      title: "構文エラーを最小化する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G136"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G136"
+      type: "general"
+      priority: "medium"
+
+  failures:
+    - id: "F77"
+      title: "確認や取り消しなく重要なデータを送信している"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F77"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F77"
+      priority: "medium"
+    - id: "F68"
+      title: "視覚的にしか識別できないラベルや説明を用いている"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F68"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F68"
+      priority: "medium"
+
+learning_path: |
+  1. 4.1.2 を読み、名前・役割・値の要件を把握する
+  2. 4.1.1 で構文エラーを避ける重要性を確認する
+  3. ARIA16/H91 でラベルとマークアップの実装を学ぶ
+  4. G136 で構文エラーを最小化する方法を確認する
+  5. 関連する失敗例（F68 など）を確認する
+
+related_topics:
+  - "forms"
+  - "input-assistance"
+  - "interactive-components"

@@ -1,0 +1,40 @@
+{
+  "name": "mcp-a11y-learning-guide",
+  "version": "0.1.0",
+  "description": "MCP server that guides accessibility learners to the right W3C resources.",
+  "license": "MIT",
+  "author": "burnworks",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node --esm src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/burnworks/mcp-a11y-learning-guide"
+  },
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "a11y-learning",
+    "learning",
+    "ai",
+    "mcp",
+    "model-context-protocol"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.22.0",
+    "yaml": "^2.8.1"
+  },
+  "devDependencies": {
+    "vitest": "^4.0.13",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

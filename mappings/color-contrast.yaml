@@ -1,0 +1,95 @@
+topic: "色のコントラスト"
+
+keywords:
+  - "色"
+  - "color"
+  - "コントラスト"
+  - "contrast"
+  - "色の組み合わせ"
+  - "見やすさ"
+  - "輝度"
+  - "背景色"
+  - "文字色"
+  - "アクセシビリティカラー"
+  - "WCAG コントラスト"
+  - "視覚的提示"
+
+references:
+  criteria:
+    - id: "1.4.3"
+      level: "AA"
+      title: "コントラスト（最低限）"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#contrast-minimum"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#contrast-minimum"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/contrast-minimum"
+      priority: "must-read"
+      description: "4.5:1 の最低コントラスト要件"
+    - id: "1.4.11"
+      level: "AA"
+      title: "非テキストのコントラスト"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#non-text-contrast"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#non-text-contrast"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/non-text-contrast"
+      priority: "recommended"
+      description: "UI部品やグラフィックのコントラスト"
+    - id: "1.4.6"
+      level: "AAA"
+      title: "コントラスト（高度）"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#contrast-enhanced"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#contrast-enhanced"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/contrast-enhanced"
+      priority: "recommended"
+      description: "7:1 の高コントラスト要件"
+    - id: "2.4.11"
+      level: "AA"
+      title: "フォーカスの外観"
+      wcag_url: "https://www.w3.org/TR/WCAG22/#focus-appearance"
+      understanding_url: "https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance"
+      wcag_url_ja: "https://waic.jp/translations/WCAG22/#focus-appearance"
+      understanding_url_ja: "https://waic.jp/translations/WCAG22/Understanding/focus-appearance"
+      priority: "recommended"
+      description: "フォーカス指標のコントラスト要件"
+
+  techniques:
+    - id: "G18"
+      title: "テキストと背景に 4.5:1 以上のコントラストを確保する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G18"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G18"
+      type: "general"
+      priority: "high"
+    - id: "G145"
+      title: "大きなテキストと背景に 3:1 以上を確保する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G145"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G145"
+      type: "general"
+      priority: "medium"
+    - id: "G174"
+      title: "十分なコントラストの提示に切り替えられるようにする"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G174"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G174"
+      type: "general"
+      priority: "medium"
+
+  failures:
+    - id: "F83"
+      title: "視認性が不十分なコントラスト比を使用している"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F83"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F83"
+      priority: "high"
+    - id: "F24"
+      title: "背景色とテキストの色のコントラスト不足"
+      url: "https://www.w3.org/WAI/WCAG21/Failures/F24"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F24"
+      priority: "high"
+
+learning_path: |
+  1. 達成基準 1.4.3 でコントラスト比の基本要件（4.5:1）を理解する
+  2. Understanding 1.4.3 で大きなテキストの例外（3:1）を確認する
+  3. G18 でコントラスト比の計測と確保方法を学ぶ
+  4. 達成基準 1.4.11 でUI部品やグラフィカルオブジェクトの要件を確認する
+  5. 達成基準 2.4.11 でフォーカス指標のコントラストを確認する
+  6. F83 で不十分なコントラストの失敗例を把握する
+  7. コントラストチェックツールの活用を検討する

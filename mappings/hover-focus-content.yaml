@@ -1,0 +1,57 @@
+topic: "ホバー/フォーカス時の追加コンテンツ"
+
+keywords:
+  - "ホバー"
+  - "hover"
+  - "フォーカス"
+  - "tooltip"
+  - "ツールチップ"
+  - "ポップアップ"
+
+references:
+  criteria:
+    - id: "1.4.13"
+      level: "AA"
+      title: "ホバー又はフォーカス時のコンテンツ"
+      wcag_url: "https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus"
+      understanding_url: "https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus"
+      wcag_url_ja: "https://waic.jp/translations/WCAG21/#content-on-hover-or-focus"
+      understanding_url_ja: "https://waic.jp/translations/WCAG21/Understanding/content-on-hover-or-focus"
+      priority: "recommended"
+      description: "ホバー/フォーカスで現れる内容を操作可能に"
+
+  techniques:
+    - id: "G207"
+      title: "追加コンテンツを消せる・ホバーできる・持続するようにする"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G207"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G207"
+      type: "general"
+      priority: "medium"
+    - id: "G184"
+      title: "ホバーで表示されるコンテンツにキーボード操作を提供する"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/general/G184"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/general/G184"
+      type: "general"
+      priority: "medium"
+
+  failures:
+    - id: "F95"
+      title: "ホバー中にコンテンツが消えてしまい操作できない"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/failures/F95"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F95"
+      priority: "medium"
+    - id: "F100"
+      title: "フォーカスで表示された追加コンテンツを閉じられない"
+      url: "https://www.w3.org/WAI/WCAG21/Techniques/failures/F100"
+      url_ja: "https://waic.jp/translations/WCAG21/Techniques/failures/F100"
+      priority: "medium"
+
+learning_path: |
+  1. 達成基準 1.4.13 でホバー/フォーカス時の要件を理解する
+  2. 解説書の条件（消せる・カーソル追従・はみ出し防止）を確認する
+  3. 実装時にキーボード操作でも同等に扱えることを検証する
+
+related_topics:
+  - "navigation"
+  - "keyboard"
+  - "interactive-components"
